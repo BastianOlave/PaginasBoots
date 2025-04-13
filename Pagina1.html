@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Mundo Gatos</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        position: relative;
+        z-index: 0;
+      }
+    
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('./assets/img/Cover/Fondo.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(4px); /* Ajusta el nivel de difuminado */
+        opacity: 0.4;       /* Ajusta la opacidad */
+        z-index: -2;
+      }
+    
+      body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4); /* Oscurece más si hace falta contraste */
+        z-index: -1;
+      }
+    
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Mundo Gatos!</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        <a class="nav-link" href="#">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3">
+    <h1>Bienvenid@ a Mundo Gatos 😻</h1>
+    <p class="lead">Un rincón felino donde podés tomar café con michis, vitrinear cositas adorables y dejar que los maullidos conquisten tu corazón.</p>
+    <p class="lead d-flex justify-content-center gap-3">
+      <a href="./Pagina3.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Cafe de Gatos</a>
+      <a href="./pagina2.html" class="btn btn-lg btn-outline-light fw-bold">Tienda Mininos</a>
+    </p>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p>Bastián Olave Lagos - Inacap - Analista Programador <a href="https://getbootstrap.com/" class="text-white">Mundo Gatos</a>
+  </footer>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> 
+  </body>
+</html>
